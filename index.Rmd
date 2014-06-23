@@ -1,0 +1,65 @@
+---
+title       : The click plot application!
+subtitle    : 
+author      : markist
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Application
+
+This is a shiny application to calculate 
+
+- mean,
+- median and
+- standard deviation 
+
+from longitudinal data.
+
+---
+
+## The data (I)
+
+Wind data from the aiquality data set can be seleted.
+
+````{r, echo=FALSE}
+require(graphics)
+plot(airquality$Day,airquality$Wind)
+plot(airquality$Day,airquality$Temp)
+````
+
+
+---
+
+## The data (II)
+
+Temperature data from the aiquality data set can be seleted as well!
+
+````{r,echo=FALSE}
+require(graphics)
+plot(airquality$Day,airquality$Temp)
+````
+
+---
+
+## Start now!
+
+To get started:
+
+Click into the plot:
+
+- go to: https://markist.shinyapps.io/CourseraShinyApp/
+- click on the plot
+- a line where you clicked will be shown
+- the calculated variable will be plotted between the clicks
+
+- P.S: You can choose a title!
+
+
+
+
